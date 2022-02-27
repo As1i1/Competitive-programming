@@ -3,4 +3,4 @@ project(Competitive_programming)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Competitive_programming "PFO/D.cpp")
+add_executable(Competitive_programming MOSH/D.cpp)

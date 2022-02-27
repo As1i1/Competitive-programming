@@ -128,29 +128,29 @@ Competitive_programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/build
 .PHONY : Competitive_programming/fast
 
-PFO/D.obj: PFO/D.cpp.obj
-.PHONY : PFO/D.obj
+MOSH/D.obj: MOSH/D.cpp.obj
+.PHONY : MOSH/D.obj
 
 # target to build an object file
-PFO/D.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj
-.PHONY : PFO/D.cpp.obj
+MOSH/D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj
+.PHONY : MOSH/D.cpp.obj
 
-PFO/D.i: PFO/D.cpp.i
-.PHONY : PFO/D.i
+MOSH/D.i: MOSH/D.cpp.i
+.PHONY : MOSH/D.i
 
 # target to preprocess a source file
-PFO/D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/PFO/D.cpp.i
-.PHONY : PFO/D.cpp.i
+MOSH/D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.i
+.PHONY : MOSH/D.cpp.i
 
-PFO/D.s: PFO/D.cpp.s
-.PHONY : PFO/D.s
+MOSH/D.s: MOSH/D.cpp.s
+.PHONY : MOSH/D.s
 
 # target to generate assembly for a file
-PFO/D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/PFO/D.cpp.s
-.PHONY : PFO/D.cpp.s
+MOSH/D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.s
+.PHONY : MOSH/D.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Competitive_programming
-	@echo ... PFO/D.obj
-	@echo ... PFO/D.i
-	@echo ... PFO/D.s
+	@echo ... MOSH/D.obj
+	@echo ... MOSH/D.i
+	@echo ... MOSH/D.s
 .PHONY : help
 
 

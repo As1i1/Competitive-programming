@@ -68,28 +68,28 @@ include CMakeFiles/Competitive_programming.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Competitive_programming.dir/flags.make
 
-CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj: CMakeFiles/Competitive_programming.dir/flags.make
-CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj: ../PFO/D.cpp
-CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj: CMakeFiles/Competitive_programming.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj -MF CMakeFiles\Competitive_programming.dir\PFO\D.cpp.obj.d -o CMakeFiles\Competitive_programming.dir\PFO\D.cpp.obj -c "H:\Dima\Competitive programming\PFO\D.cpp"
+CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj: CMakeFiles/Competitive_programming.dir/flags.make
+CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj: ../MOSH/D.cpp
+CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj: CMakeFiles/Competitive_programming.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj -MF CMakeFiles\Competitive_programming.dir\MOSH\D.cpp.obj.d -o CMakeFiles\Competitive_programming.dir\MOSH\D.cpp.obj -c "H:\Dima\Competitive programming\MOSH\D.cpp"
 
-CMakeFiles/Competitive_programming.dir/PFO/D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Competitive_programming.dir/PFO/D.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Dima\Competitive programming\PFO\D.cpp" > CMakeFiles\Competitive_programming.dir\PFO\D.cpp.i
+CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Dima\Competitive programming\MOSH\D.cpp" > CMakeFiles\Competitive_programming.dir\MOSH\D.cpp.i
 
-CMakeFiles/Competitive_programming.dir/PFO/D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Competitive_programming.dir/PFO/D.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\Dima\Competitive programming\PFO\D.cpp" -o CMakeFiles\Competitive_programming.dir\PFO\D.cpp.s
+CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\Dima\Competitive programming\MOSH\D.cpp" -o CMakeFiles\Competitive_programming.dir\MOSH\D.cpp.s
 
 # Object files for target Competitive_programming
 Competitive_programming_OBJECTS = \
-"CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj"
+"CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj"
 
 # External object files for target Competitive_programming
 Competitive_programming_EXTERNAL_OBJECTS =
 
-Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/PFO/D.cpp.obj
+Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/build.make
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/linklibs.rsp
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/objects1.rsp

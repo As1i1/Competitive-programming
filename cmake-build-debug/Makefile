@@ -128,29 +128,29 @@ Competitive_programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/build
 .PHONY : Competitive_programming/fast
 
-MOSH/D.obj: MOSH/D.cpp.obj
-.PHONY : MOSH/D.obj
+Vuzak/G.obj: Vuzak/G.cpp.obj
+.PHONY : Vuzak/G.obj
 
 # target to build an object file
-MOSH/D.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj
-.PHONY : MOSH/D.cpp.obj
+Vuzak/G.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj
+.PHONY : Vuzak/G.cpp.obj
 
-MOSH/D.i: MOSH/D.cpp.i
-.PHONY : MOSH/D.i
+Vuzak/G.i: Vuzak/G.cpp.i
+.PHONY : Vuzak/G.i
 
 # target to preprocess a source file
-MOSH/D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.i
-.PHONY : MOSH/D.cpp.i
+Vuzak/G.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.i
+.PHONY : Vuzak/G.cpp.i
 
-MOSH/D.s: MOSH/D.cpp.s
-.PHONY : MOSH/D.s
+Vuzak/G.s: Vuzak/G.cpp.s
+.PHONY : Vuzak/G.s
 
 # target to generate assembly for a file
-MOSH/D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.s
-.PHONY : MOSH/D.cpp.s
+Vuzak/G.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.s
+.PHONY : Vuzak/G.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Competitive_programming
-	@echo ... MOSH/D.obj
-	@echo ... MOSH/D.i
-	@echo ... MOSH/D.s
+	@echo ... Vuzak/G.obj
+	@echo ... Vuzak/G.i
+	@echo ... Vuzak/G.s
 .PHONY : help
 
 

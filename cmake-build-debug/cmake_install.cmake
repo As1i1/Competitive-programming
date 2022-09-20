@@ -1,4 +1,4 @@
-# Install script for directory: H:/Dima/Competitive programming
+# Install script for directory: D:/Programming/Competitive programming
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "H:/Dima/Competitive programming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Programming/Competitive programming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

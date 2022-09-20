@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "H:/Dima/Competitive programming/MOSH/D.cpp" "CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj" "gcc" "CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj.d"
+  "D:/Programming/Competitive programming/ICPC_traning02/E.cpp" "CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj" "gcc" "CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj.d"
   )
 
 # Targets to which this target links.

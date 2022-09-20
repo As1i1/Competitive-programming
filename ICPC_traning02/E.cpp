@@ -10,13 +10,23 @@ mt19937 gen;
 
 
 void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
-
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n);
+    for(int i = 0; i < n; ++i) cin >> a[i];
+    vector<ll> ans(n);
+    for (int i = 0; i < k; ++i){
+        ll tmp = 0;
+        for (int j = i; j < n; j += k){
+            tmp += a[j];
+        }
+        ans[i] = tmp;
     }
+    ll mn = ll_INF;
+    for (int i = 0; i < k; ++i){
+        mn = min(mn, ans[i]);
+    }
+    cout << mn;
 }
 
 
@@ -28,7 +38,7 @@ signed main() {
 //	gen.seed(time(0));
 //	cout << fixed;
 //	cout.precision(15);
-//    cin >> t;
+ //   cin >> t;
     while(t--){
         solve();
     }

@@ -1,3 +1,7 @@
+//
+// Created by Dima on 30.08.2022.
+//
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -10,11 +14,22 @@ mt19937 gen;
 
 
 void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
+    int n;
+    cin >> n;
+    set<ll> s;
+    for(int i = 0; i < n; ++i){
+        ll a; cin >> a; s.insert(a);
+    }
+    int m;
+    cin >> m;
+    while(m--){
+        int l, r;
+        cin >> l >> r;
+        auto p1 = s.lower_bound(l), p2 = s.upper_bound(r);
+        p2--;
+        ll x = *p1, y = *p2;
+        if (x > r || x < l || y > r || y < l) cout << 0 << "\n";
+        else cout << y - x << "\n";
 
     }
 }

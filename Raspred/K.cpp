@@ -1,3 +1,7 @@
+//
+// Created by Dima on 30.08.2022.
+//
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -7,15 +11,22 @@ const int INF = 1e9, MOD = 1e9 + 7, Q = 38;
 const ld eps = 1e-9;
 const ll ll_INF = 1e18;
 mt19937 gen;
+int l, n;
+
+
+void dfs(set<string> s, set<char> s1){
+
+}
+
+
 
 
 void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
-
+    cin >> s >> n;
+    set<string> words;
+    for(int i = 0; i < n; ++i){
+        string t; cin >> t;
+        words.insert(t);
     }
 }
 
@@ -28,7 +39,7 @@ signed main() {
 //	gen.seed(time(0));
 //	cout << fixed;
 //	cout.precision(15);
-//    cin >> t;
+    cin >> t;
     while(t--){
         solve();
     }

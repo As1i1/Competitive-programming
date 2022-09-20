@@ -9,14 +9,25 @@ const ll ll_INF = 1e18;
 mt19937 gen;
 
 
-void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
-
+int mn(int n){
+    if (n == 1) return 1;
+    for (double i = 2; i < 100; i++){
+        if (pow(pow(n, 1/i), i) == n) return pow(n, 1/i);
     }
+}
+
+
+void solve(){
+    int n;
+    cin >> n;
+//    vector<int> a(n);
+    set<int> ans;
+    for (int i = 0; i < n; ++i){
+        int t;
+        cin >> t;
+        ans.insert(mn(t));
+    }
+    cout << (int)ans.size();
 }
 
 

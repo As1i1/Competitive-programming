@@ -10,13 +10,22 @@ mt19937 gen;
 
 
 void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
-
+    int n, k;
+    cin >> n >> k;
+    vector<int> dp(n + 1), a(n);
+    for (int i = 0; i < n; ++i){
+        cin >> a[i];
     }
+    for (int i = 0; i < k; ++i){
+        dp[i] = a[i];
+    }
+    for (int i = k; i <= n; ++i){
+        for (int j = i - k; j < i; ++j){
+            dp[i] = max(dp[i], dp[j]);
+        }
+        if (i != n) dp[i] = min(dp[i], a[i]);
+    }
+    cout << dp[n];
 }
 
 

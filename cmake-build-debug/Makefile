@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "H:\Dima\Competitive programming"
+CMAKE_SOURCE_DIR = "D:\Programming\Competitive programming"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "H:\Dima\Competitive programming\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Programming\Competitive programming\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" "H:\Dima\Competitive programming\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" "D:\Programming\Competitive programming\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ Competitive_programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/build
 .PHONY : Competitive_programming/fast
 
-MOSH/D.obj: MOSH/D.cpp.obj
-.PHONY : MOSH/D.obj
+ICPC_traning02/E.obj: ICPC_traning02/E.cpp.obj
+.PHONY : ICPC_traning02/E.obj
 
 # target to build an object file
-MOSH/D.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.obj
-.PHONY : MOSH/D.cpp.obj
+ICPC_traning02/E.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj
+.PHONY : ICPC_traning02/E.cpp.obj
 
-MOSH/D.i: MOSH/D.cpp.i
-.PHONY : MOSH/D.i
+ICPC_traning02/E.i: ICPC_traning02/E.cpp.i
+.PHONY : ICPC_traning02/E.i
 
 # target to preprocess a source file
-MOSH/D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.i
-.PHONY : MOSH/D.cpp.i
+ICPC_traning02/E.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.i
+.PHONY : ICPC_traning02/E.cpp.i
 
-MOSH/D.s: MOSH/D.cpp.s
-.PHONY : MOSH/D.s
+ICPC_traning02/E.s: ICPC_traning02/E.cpp.s
+.PHONY : ICPC_traning02/E.s
 
 # target to generate assembly for a file
-MOSH/D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/MOSH/D.cpp.s
-.PHONY : MOSH/D.cpp.s
+ICPC_traning02/E.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.s
+.PHONY : ICPC_traning02/E.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Competitive_programming
-	@echo ... MOSH/D.obj
-	@echo ... MOSH/D.i
-	@echo ... MOSH/D.s
+	@echo ... ICPC_traning02/E.obj
+	@echo ... ICPC_traning02/E.i
+	@echo ... ICPC_traning02/E.s
 .PHONY : help
 
 

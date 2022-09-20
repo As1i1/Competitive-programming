@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Programming\Competitive programming"
+CMAKE_SOURCE_DIR = "H:\Dima\Competitive programming"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Programming\Competitive programming\cmake-build-debug"
+CMAKE_BINARY_DIR = "H:\Dima\Competitive programming\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Competitive_programming.dir/depend.make
@@ -68,33 +68,33 @@ include CMakeFiles/Competitive_programming.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Competitive_programming.dir/flags.make
 
-CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj: CMakeFiles/Competitive_programming.dir/flags.make
-CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj: ../ICPC_traning02/E.cpp
-CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj: CMakeFiles/Competitive_programming.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj -MF CMakeFiles\Competitive_programming.dir\ICPC_traning02\E.cpp.obj.d -o CMakeFiles\Competitive_programming.dir\ICPC_traning02\E.cpp.obj -c "D:\Programming\Competitive programming\ICPC_traning02\E.cpp"
+CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj: CMakeFiles/Competitive_programming.dir/flags.make
+CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj: ../Vuzak/G.cpp
+CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj: CMakeFiles/Competitive_programming.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj -MF CMakeFiles\Competitive_programming.dir\Vuzak\G.cpp.obj.d -o CMakeFiles\Competitive_programming.dir\Vuzak\G.cpp.obj -c "H:\Dima\Competitive programming\Vuzak\G.cpp"
 
-CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Programming\Competitive programming\ICPC_traning02\E.cpp" > CMakeFiles\Competitive_programming.dir\ICPC_traning02\E.cpp.i
+CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Dima\Competitive programming\Vuzak\G.cpp" > CMakeFiles\Competitive_programming.dir\Vuzak\G.cpp.i
 
-CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Programming\Competitive programming\ICPC_traning02\E.cpp" -o CMakeFiles\Competitive_programming.dir\ICPC_traning02\E.cpp.s
+CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "H:\Dima\Competitive programming\Vuzak\G.cpp" -o CMakeFiles\Competitive_programming.dir\Vuzak\G.cpp.s
 
 # Object files for target Competitive_programming
 Competitive_programming_OBJECTS = \
-"CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj"
+"CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj"
 
 # External object files for target Competitive_programming
 Competitive_programming_EXTERNAL_OBJECTS =
 
-Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/ICPC_traning02/E.cpp.obj
+Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/build.make
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/linklibs.rsp
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/objects1.rsp
 Competitive_programming.exe: CMakeFiles/Competitive_programming.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Competitive_programming.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Competitive_programming.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Competitive_programming.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +106,6 @@ CMakeFiles/Competitive_programming.dir/clean:
 .PHONY : CMakeFiles/Competitive_programming.dir/clean
 
 CMakeFiles/Competitive_programming.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Programming\Competitive programming" "D:\Programming\Competitive programming" "D:\Programming\Competitive programming\cmake-build-debug" "D:\Programming\Competitive programming\cmake-build-debug" "D:\Programming\Competitive programming\cmake-build-debug\CMakeFiles\Competitive_programming.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "H:\Dima\Competitive programming" "H:\Dima\Competitive programming" "H:\Dima\Competitive programming\cmake-build-debug" "H:\Dima\Competitive programming\cmake-build-debug" "H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles\Competitive_programming.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Competitive_programming.dir/depend
 

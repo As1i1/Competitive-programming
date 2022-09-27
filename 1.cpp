@@ -10,13 +10,8 @@ mt19937 gen;
 
 
 void solve(){
-    unsigned char a1, a2, a3;
-    vector<vector<int >> v;
-    for (int i = 0; i < 256 * 256 * 256; ++i){
-        a1 ^= a2;
-        a2 += (a3 & a1);
-
-    }
+    short a = 0xF280;
+    cout << a / (1 << 7);
 }
 
 

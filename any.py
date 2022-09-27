@@ -1,3 +1,3 @@
-for i in range(int(input())):
-    n, l, r = map(int, input().split())
-    print((r - 1) // n - (l - 1) // n)
+for i in range(0, 100):
+    if (12 * i - 17) % 5 == 0:
+        print(i, (12 * i - 17) // i)

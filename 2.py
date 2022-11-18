@@ -1,8 +1,12 @@
-for x1 in [1, 0]:
-    for x2 in [1, 0]:
-        for x3 in [1, 0]:
-            for x4 in [1, 0]:
-                if sum([sum([x1, x2, x4]), sum([x1, x3, x4]), sum([x2, x3, x4])]) > 1:
-                    print(1, end=' ')
-                else:
-                    print(0, end=' ')
+l, r = map(float, input().split())
+
+
+mn_p = []
+for q in range(1, 13):
+    cur_mn = 1e9
+    for p in range(1, int(2 ** q)):
+        t = p / (2 ** q)
+        if l <= t < r:
+            cur_mn = min(p, cur_mn)
+    mn_p.append(cur_mn)
+print(mn_p)

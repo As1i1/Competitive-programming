@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "H:\Dima\Competitive programming"
+CMAKE_SOURCE_DIR = "C:\Programming\Competitive programming"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "H:\Dima\Competitive programming\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Programming\Competitive programming\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" "H:\Dima\Competitive programming\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" "C:\Programming\Competitive programming\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Dima\Competitive programming\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Programming\Competitive programming\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ Competitive_programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/build
 .PHONY : Competitive_programming/fast
 
-Vuzak/G.obj: Vuzak/G.cpp.obj
-.PHONY : Vuzak/G.obj
+DM2022/Lab2/I.obj: DM2022/Lab2/I.cpp.obj
+.PHONY : DM2022/Lab2/I.obj
 
 # target to build an object file
-Vuzak/G.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj
-.PHONY : Vuzak/G.cpp.obj
+DM2022/Lab2/I.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.obj
+.PHONY : DM2022/Lab2/I.cpp.obj
 
-Vuzak/G.i: Vuzak/G.cpp.i
-.PHONY : Vuzak/G.i
+DM2022/Lab2/I.i: DM2022/Lab2/I.cpp.i
+.PHONY : DM2022/Lab2/I.i
 
 # target to preprocess a source file
-Vuzak/G.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.i
-.PHONY : Vuzak/G.cpp.i
+DM2022/Lab2/I.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.i
+.PHONY : DM2022/Lab2/I.cpp.i
 
-Vuzak/G.s: Vuzak/G.cpp.s
-.PHONY : Vuzak/G.s
+DM2022/Lab2/I.s: DM2022/Lab2/I.cpp.s
+.PHONY : DM2022/Lab2/I.s
 
 # target to generate assembly for a file
-Vuzak/G.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.s
-.PHONY : Vuzak/G.cpp.s
+DM2022/Lab2/I.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Competitive_programming.dir\build.make CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.s
+.PHONY : DM2022/Lab2/I.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Competitive_programming
-	@echo ... Vuzak/G.obj
-	@echo ... Vuzak/G.i
-	@echo ... Vuzak/G.s
+	@echo ... DM2022/Lab2/I.obj
+	@echo ... DM2022/Lab2/I.i
+	@echo ... DM2022/Lab2/I.s
 .PHONY : help
 
 

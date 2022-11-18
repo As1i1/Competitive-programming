@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "H:/Dima/Competitive programming/Vuzak/G.cpp" "CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj" "gcc" "CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj.d"
+  "C:/Programming/Competitive programming/DM2022/Lab2/I.cpp" "CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.obj" "gcc" "CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.obj.d"
   )
 
 # Targets to which this target links.

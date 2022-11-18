@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj"
-  "CMakeFiles/Competitive_programming.dir/Vuzak/G.cpp.obj.d"
+  "CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.obj"
+  "CMakeFiles/Competitive_programming.dir/DM2022/Lab2/I.cpp.obj.d"
   "Competitive_programming.exe"
   "Competitive_programming.exe.manifest"
   "Competitive_programming.pdb"

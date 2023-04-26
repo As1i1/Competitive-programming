@@ -1,0 +1,38 @@
+//big_integer operator/(big_integer const &a, big_integer const &b) {
+//    if (b.is_zero()) {
+//        throw std::runtime_error("Division by zero");
+//    } else if (a.value.size() < b.value.size()) {
+//        big_integer res;
+//        return res;
+//    } else if (b.value.size() == 1) {
+//        return b.sign > 0 ? a.div_long_short(b.value[0]).first : -(a.div_long_short(b.value[0]).first);
+//    }
+//    int32_t res_sign = a.sign * b.sign;
+//    auto n = a.value.size(), m = b.value.size();
+//    auto f = (1L << 32) / (uint64_t(b.value[m - 1]) + 1);
+//    big_integer r = a * f;
+//    big_integer d = b * f;
+//    r.sign = 1;
+//    d.sign = 1;
+//    big_integer q;
+//    q.value.resize(n - m + 1);
+//    r.value.push_back(0);
+//    const uint64_t d2 = (uint64_t(d.value[m - 1]) << 32) + uint64_t(d.value[m - 2]);
+//    for (auto k = int32_t(n - m); k >= 0; k--) {
+//        // precondition: t has k + m + 1 digits
+//        auto qt = r.trial(uint64_t(k), m, d2);
+//        big_integer qt_mul;
+//        qt_mul.value[0] = qt;
+//        big_integer dq = qt_mul * d;
+//        dq.value.resize(m + 1);
+//        if (r.smaller(dq, uint64_t(k), m)) {
+//            qt--;
+//            dq = d * qt;
+//        }
+//        q.value[k] = qt;
+//        r.difference(dq, uint64_t(k), m);
+//    }
+//    q.sign = res_sign;
+//    q.shrink_to_fit();
+//    return q;
+//}

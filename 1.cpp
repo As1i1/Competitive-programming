@@ -9,23 +9,82 @@ const ll ll_INF = 1e18;
 mt19937 gen;
 
 
-void solve(){
-    short a = 0xF280;
-    cout << a / (1 << 7);
+void solve() {
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n, 0);
+    vector<vector<int>> dp(n);
+    vector<ll> ans(n, 0);
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    for (int i = 0; i < k - 1; i++) {
+        dp[k - 1].push_back(i);
+        ans[k - 1] += abs(a[i] - a[i + 1]);
+    }
+    dp[k - 1].push_back(k - 1);
+
+
+
+    for (int i = k; i < n; ++i) {
+        ll new_sum = ans[i - 1];
+        int index = -1;
+        vector<int> indexs = dp[i - 1];
+        for (int j = 0; j < k; j++) {
+            if (j == 0) {
+                ll cur = ans[i - 1] -
+                        abs(a[indexs[j]] - a[indexs[j + 1]]) +
+                        abs(a[indexs.back()] - a[i]);
+                if (cur > new_sum) {
+                    new_sum = cur;
+                    index = j;
+                }
+            } else if (j == k - 1) {
+                ll cur = ans[i - 1] -
+                        abs(a[indexs[j]] - a[indexs[j - 1]]) +
+                        abs(a[indexs[j - 1]] - a[i]);
+                if (cur > new_sum) {
+                    new_sum = cur;
+                    index = j;
+                }
+            } else {
+                ll cur = ans[i - 1] -
+                        abs(a[indexs[j]] - a[indexs[j + 1]]) -
+                        abs(a[indexs[j]] - a[indexs[j - 1]]) +
+                        abs(a[indexs.back()] - a[i]);
+                if (cur > new_sum) {
+                    new_sum = cur;
+                    index = j;
+                }
+            }
+        }
+        if (index == -1) {
+            dp[i] = indexs;
+            ans[i] = new_sum;
+        } else {
+            for (int j = 0; j < k; ++j) {
+                if (j != index) {
+                    dp[i].push_back(indexs[j]);
+                }
+            }
+            dp[i].push_back(i);
+            ans[i] = new_sum;
+        }
+    }
+
+    cout << ans.back();
 }
+
 
 
 signed main() {
     ios::sync_with_stdio(false);
     cout.tie(nullptr);
     cin.tie(nullptr);
-    int t = 1;
+//    int t = 1;
 //	gen.seed(time(0));
 //	cout << fixed;
 //	cout.precision(15);
-//    cin >> t;
-    while(t--){
-        solve();
-    }
+    solve();
     return 0;
 }

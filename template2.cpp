@@ -22,7 +22,7 @@ signed main() {
 //	gen.seed(time(0));
 //	cout << fixed;
 //	cout.precision(15);
-    cin >> t;
+//    cin >> t;
     while(t--){
         solve();
     }

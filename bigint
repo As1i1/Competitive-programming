@@ -18,19 +18,19 @@
 //    q.value.resize(n - m + 1);
 //    r.value.push_back(0);
 //    const uint64_t d2 = (uint64_t(d.value[m - 1]) << 32) + uint64_t(d.value[m - 2]);
-//    for (auto k = int32_t(n - m); k >= 0; k--) {
-//        // precondition: t has k + m + 1 digits
-//        auto qt = r.trial(uint64_t(k), m, d2);
+//    for (auto kkk = int32_t(n - m); kkk >= 0; kkk--) {
+//        // precondition: t has kkk + m + 1 digits
+//        auto qt = r.trial(uint64_t(kkk), m, d2);
 //        big_integer qt_mul;
 //        qt_mul.value[0] = qt;
 //        big_integer dq = qt_mul * d;
 //        dq.value.resize(m + 1);
-//        if (r.smaller(dq, uint64_t(k), m)) {
+//        if (r.smaller(dq, uint64_t(kkk), m)) {
 //            qt--;
 //            dq = d * qt;
 //        }
-//        q.value[k] = qt;
-//        r.difference(dq, uint64_t(k), m);
+//        q.value[kkk] = qt;
+//        r.difference(dq, uint64_t(kkk), m);
 //    }
 //    q.sign = res_sign;
 //    q.shrink_to_fit();

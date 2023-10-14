@@ -1,27 +1,23 @@
-import re
-import itertools
+a = 30
+b = 60
 
-
-def check(w):
-    if w.count("a") >= 2 and w.count("b") >= 1:
-        return True
-    return False
-
-
-
-r = re.compile(r'^c*(ac*a(a|c)*b|ac*b(b|c)*a|b(c|b)*a(c|b)*a)(c|b|a)*$')
-
-alphabet = 'abc'
-K = 11
-
-for n in range(K):
-    print(f'n={n}: ', end='')
-    for w in itertools.product(alphabet, repeat=n):
-        sw = ''.join(w)
-        if bool(re.fullmatch(r, sw)) != check(sw):
-            print(sw)
-            print(check(sw))
-            print(re.fullmatch(r, sw))
-            break
-    else:
-        print('Fine!')
+mx = -10000
+x, y, z, w, v, t = 0, 0, 0, 0, 0, 0
+for x1 in range(a, b):
+    for x2 in range(a, b):
+        for x3 in range(a, b):
+            for x4 in range(a, b):
+        # for x5 in range(a, b):
+            # for x6 in range(a, b):
+                # res = ((x1 * x2 * x3 * x4 * x5 * x6) /
+                #        ((a + x1) * (x1 + x2) * (x2 + x3) * (x3 + x4) * (x4 + x5) * (x5 + x6) * (x6 + b)))
+                res = ((x1 * x2 * x3 * x4) / ((a + x1) * (x1 + x2) * (x2 + x3) * (x3 + x4) * (x4 + b)))
+                if res > mx:
+                    mx = res
+                    x = x1
+                    y = x2
+                    z = x3
+                    w = x4
+                    # v = x5
+                    # t = x6
+print(x, y, z, w, v, t)

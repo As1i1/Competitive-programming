@@ -13,75 +13,57 @@ const ld eps = 1e-9;
 const ll ll_INF = 1e18;
 mt19937 gen;
 
-int n = 6;
+struct matrix {
+    vector<vector<ll>> m;
 
-
-
-int F_count(vector<vector<int>> g) {
-    int ans = 0;
-    vector<vector<char>> used(n);
-    for (int i = 0; i < n; ++i)
-        used[i].resize(g[i].size());
-    for (int i = 0; i < n; ++i)
-        for (size_t j = 0; j < g[i].size(); ++j)
-            if (!used[i][j]) {
-                used[i][j] = true;
-                int v = g[i][j], pv = i;
-                vector<int> facet;
-                for (;;) {
-                    facet.push_back(v);
-                    auto it = find(g[v].begin(), g[v].end(), pv);
-                    if (++it == g[v].end())
-                        it = g[v].begin();
-                    if (used[v][it - g[v].begin()])
-                        break;
-                    used[v][it - g[v].begin()] = true;
-                    pv = v, v = *it;
-                }
-                ans++;
-            }
-    return ans;
-}
-
-void print_g(vector<vector<int>> g) {
-    cout << "-------------------\n";
-    for (int i = 0; i < n; ++i) {
-        for(int j = 0; j < n; ++j) {
-            cout << g[i][j] << " ";
-        }
-        cout << "\n";
+    matrix(int l, int r) {
+        m = vector<vector<ll>>(l, vector<ll>(r, 0));
     }
-    cout << "-------------------";
+
+    friend matrix operator*(const matrix& left, const matrix& right) {
+        matrix res(left.m.size(), left.m.size());
+        int n = left.m.size();
+        for (int i = 0; i < n; ++i) {
+            for(int j = 0; j < n; ++j) {
+                ll sum = 0;
+                for (int k = 0; k < n; ++k) {
+                    sum = (sum + (left.m[i][k] * right.m[k][j]) % MOD) % MOD;
+                }
+                res.m[i][j] = sum;
+            }
+        }
+        return res;
+    }
+};
+
+matrix binpow(ll n, matrix a) {
+    if (n == 1) {
+        return a;
+    }
+    matrix d = binpow(n / 2, a);
+    if (n % 2 != 0) {
+        return d * d * a;
+    } else {
+        return d * d;
+    }
 }
 
 void solve() {
-    vector<vector<vector<int>>> res;
-    vector<pair<int, int>> edges;
-    for (int i = 0; i < n; ++i) {
-        for (int j = i + 1; j < n; ++j) {
-            edges.emplace_back(i, j);
+    matrix m(5, 5);
+    m.m = {{0, 1, 0, 0, 1},
+           {0, 0, 1, 0, 0},
+           {0, 0, 0, 1, 0},
+           {1, 0, 0, 0, 0},
+           {0, 0, 0, 1, 0}};
+    ll s = 11986126526701LL;
+    m = binpow(s, m);
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; ++j) {
+            cout << m.m[i][j] << " ";
         }
+        cout << "\n";
     }
-    for (int i = 0; i < (1 << edges.size()); ++i) {
-        vector<vector<int>> g(n, vector<int>(n, 0));
-        int cnt = 0;
-        for (int j = 0; j < edges.size(); ++j) {
-            if (i & (1 << j)) {
-                auto [u, v] = edges[j];
-                g[u][v] = 1;
-                g[v][u] = 1;
-                cnt++;
-            }
-        }
-        if (n - cnt + F_count(g) + 1 != 2) {
-            continue;
-        }
-        print_g(g); cout << endl;
-    }
-    cout << res.size();
-    for (auto g: res) {
-        print_g(g);
-    }
+    cout << m.m[0][1];
 }
 
 signed main() {

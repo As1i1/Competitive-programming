@@ -91,10 +91,10 @@ bool check_e(int index) {
 }
 
 
-void print_g(vector<vector<int>> g) {
+void print_g(vector<vector<int>> g, int n) {
     cout << "-------------------\n";
-    for (int i = 0; i < N; ++i) {
-        for(int j = 0; j < N; ++j) {
+    for (int i = 0; i < n; ++i) {
+        for(int j = 0; j < n; ++j) {
             cout << g[i][j] << " ";
         }
         cout << "\n";
@@ -104,43 +104,40 @@ void print_g(vector<vector<int>> g) {
 
 
 void solve() {
-    vector<pair<int, int>> edges;
-    for (int i = 0; i < N; ++i) {
-        for (int j = i + 1; j < N; ++j) {
-            edges.emplace_back(i, j);
+    int n = 4;
+    map<pair<int, int>, int> mp;
+    int cnt = 0;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < i; ++j) {
+            mp[{i, j}] = cnt;
+            cnt++;
         }
     }
-    for (int i = 0; i < (1 << edges.size()); ++i) {
-        vector<vector<int>> g(N, vector<int>(N, 0));
-        int cnt = 0;
-        for (int j = 0; j < edges.size(); ++j) {
-            if (i & (1 << j)) {
-                auto [u, v] = edges[j];
-                g[u][v] = 1;
-                g[v][u] = 1;
-                cnt++;
+    for (int i = 0; i < (1 << (n * (n - 1) / 2)); ++i) {
+        vector<vector<int>> g(n, vector<int>(n, 0));
+        for (int j = 0; j < n; ++j) {
+            for (int k = 0; k < j; ++k) {
+                if (i & (1 << mp[{j, k}])) {
+                    g[j][k] = 1;
+                    g[k][j] = 1;
+                } else {
+                    g[j][k] = 2;
+                    g[k][j] = 2;
+                }
             }
         }
-        if (cnt != 7) {
-            continue;
-        }
-        graphs.push_back(g);
-        if (!check_sv(graphs.size() - 1)) {
-            graphs.pop_back();
-            continue;
-        }
-        int a;
-        for (int j = 0; j < graphs.size() - 1; ++j) {
-            if (check_cls(graphs[j], g)) {
-                graphs.pop_back();
-                goto l;
+        vector<int> v = {0, 1, 2, 3};
+        bool is_ans = false;
+        for (int k = 0; k < 24; ++k) {
+            if (g[v[0]][v[1]] == g[v[1]][v[2]] && g[v[1]][v[2]] == g[v[2]][v[3]]) {
+                is_ans = true;
                 break;
             }
+            next_permutation(v.begin(), v.end());
         }
-    }
-    cout << graphs.size();
-    for (auto g: graphs) {
-    print_g(g);
+        if (!is_ans) {
+            print_g(g, n);
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-from collections import deque
+v collections import deque
 
 first, second = deque(), deque()
 size_first, size_second = 0, 0

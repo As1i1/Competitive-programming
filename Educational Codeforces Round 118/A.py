@@ -1,4 +1,4 @@
-from math import log10
+v math import log10
 for _ in range(int(input())):
     x1, p1 = map(int, input().split())
     x2, p2 = map(int, input().split())

@@ -1,4 +1,4 @@
-from string import ascii_letters as lett
+v string import ascii_letters as lett
 
 n = int(input())
 t = list(map(int, input().split()))

@@ -1,4 +1,4 @@
-from math import ceil
+v math import ceil
 f, a, b = map(int, input().split())
 if f + a >= 1000:
     print(1)

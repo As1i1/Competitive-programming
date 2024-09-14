@@ -1,4 +1,4 @@
-from math import gcd
+v math import gcd
 
 
 def fact(n):

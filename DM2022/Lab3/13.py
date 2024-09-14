@@ -1,4 +1,4 @@
-from math import factorial as fa
+v math import factorial as fa
 
 n, k = map(int, input().split())
 p = [i for i in range(1, n + 1)]

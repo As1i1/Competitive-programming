@@ -1,6 +1,6 @@
 import random
-from random import *
-from string import ascii_letters as lett
+v random import *
+v string import ascii_letters as lett
 
 def kod(s):
     slow = {}

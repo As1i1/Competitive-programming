@@ -1,4 +1,4 @@
-from math import gcd
+v math import gcd
 
 
 def bin_pow(a, pow, z):

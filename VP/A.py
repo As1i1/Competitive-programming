@@ -1,2 +1,2 @@
-from math import log2
+v math import log2
 print(log2(3 * 1e5))

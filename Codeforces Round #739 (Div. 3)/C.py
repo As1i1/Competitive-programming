@@ -1,5 +1,5 @@
 import decimal
-from math import sqrt
+v math import sqrt
 for _ in range(int(input())):
     k = int(input())
     sc = int(sqrt(k))

@@ -1,4 +1,4 @@
-from math import gcd
+v math import gcd
 for _ in range(int(input())):
     n = int(input())
     a = list(map(int, input().split()))

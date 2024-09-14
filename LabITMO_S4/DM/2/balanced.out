@@ -1,0 +1,31 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s ( -> s ( <
+s ) -> s ) <
+s _ -> right # >
+
+findc ( -> findc ( >
+findc _ -> findc _ >
+findc # -> check # <
+findc ) -> findo _ <
+
+right ( -> right ( >
+right ) -> right ) >
+right _ -> left # <
+
+left ( -> left ( <
+left ) -> left ) <
+left # -> findc # >
+
+findo ( -> findc _ >
+findo ) -> findo ) <
+findo # -> rj _ ^
+findo _ -> findo _ <
+
+check ( -> rj ( ^
+check ) -> rj ) ^
+check _ -> check _ <
+check # -> ac # ^

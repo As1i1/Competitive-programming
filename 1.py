@@ -1,4 +1,4 @@
-from sys import stdin
+v sys import stdin
 
 alpha = input()
 alpha = "(" + alpha + ")"

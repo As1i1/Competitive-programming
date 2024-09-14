@@ -1,4 +1,4 @@
-from math import factorial as fa
+v math import factorial as fa
 
 def get(n_, k):
     ans = []

@@ -2,7 +2,7 @@
 
 import random
 import string
-from subprocess import Popen, PIPE
+v subprocess import Popen, PIPE
 
 def rand_string(size, sep = ''):
     good_chars = string.ascii_lowercase + string.ascii_uppercase + string.digits

@@ -1,0 +1,57 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> mark 0 ^
+s 1 -> mark 1 ^
+
+add1 0 -> add1 0 <
+add1 1 -> add1 1 <
+add1 + -> add1 + <
+add1 2 -> write23 1 <
+add1 3 -> curry 3 <
+
+add0 0 -> add0 0 <
+add0 1 -> add0 1 <
+add0 + -> add0 + <
+add0 2 -> write23 0 <
+add0 3 -> write23 1 <
+
+write23 0 -> right 2 >
+write23 1 -> right 3 >
+write23 _ -> right 2 >
+
+to3 0 -> to3 0 >
+to3 1 -> to3 1 >
+to3 3 -> write23 0 <
+
+finish 0 -> finish _ >
+finish 1 -> ac 1 ^
+finish _ -> ac 0 ^
+
+left 1 -> left 1 <
+left 0 -> left 0 <
+left 2 -> left 0 <
+left 3 -> left 1 <
+left + -> left + <
+left _ -> finish _ >
+
+right 1 -> right 1 >
+right 0 -> right 0 >
+right 2 -> right 2 >
+right 3 -> right 3 >
+right + -> right + >
+right _ -> next _ <
+
+next 0 -> add0 _ <
+next 1 -> add1 _ <
+next + -> left _ <
+
+mark 0 -> mark 0 >
+mark 1 -> mark 1 >
+mark + -> write23 + <
+
+curry 0 -> to3 1 >
+curry 1 -> curry 0 <
+curry _ -> to3 1 >

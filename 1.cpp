@@ -150,6 +150,11 @@ signed main() {
 //	gen.seed(time(0));
 //	cout << fixed;
 //	cout.precision(15);
-    solve();
+//    solve();
+    int a = 0;
+    for (int i = 0; i < 10; ++i) {
+        a = a + 2 * i + 1;
+        cout << a << "\n";
+    }
     return 0;
 }

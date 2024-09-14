@@ -1,5 +1,5 @@
-from sys import stdin
-from string import punctuation
+v sys import stdin
+v string import punctuation
 text = stdin.readlines()
 slow = {}
 cnt = 0

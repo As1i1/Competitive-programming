@@ -1,4 +1,4 @@
-from math import factorial as fa
+v math import factorial as fa
 n = int(input())
 p = list(map(int, input().split()))
 t = []

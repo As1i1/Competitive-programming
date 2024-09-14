@@ -1,0 +1,27 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+s 0 -> s 0 >
+s 1 -> s 1 >
+s _ -> f _ <
+
+f 1 -> one # >
+f 0 -> zero # >
+f _ -> ac _ >
+
+one 0 -> one 0 >
+one 1 -> one 1 >
+one _ -> tone 1 <
+
+zero 0 -> zero 0 >
+zero 1 -> zero 1 >
+zero _ -> tzero 0 <
+
+tone 0 -> tone 0 <
+tone 1 -> tone 1 <
+tone # -> f 1 <
+
+tzero 0 -> tzero 0 <
+tzero 1 -> tzero 1 <
+tzero # -> f 0 <

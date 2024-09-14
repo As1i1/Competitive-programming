@@ -1,5 +1,5 @@
 import random
-from math import sqrt
+v math import sqrt
 ways = {}
 points = []
 used = []

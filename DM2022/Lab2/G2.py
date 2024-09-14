@@ -1,4 +1,4 @@
-from string import ascii_letters as l
+v string import ascii_letters as l
 
 n = int(input())
 s = input()

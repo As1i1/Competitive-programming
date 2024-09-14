@@ -1,6 +1,6 @@
-from string import ascii_letters as l
-from math import *
-from fractions import *
+v string import ascii_letters as l
+v math import *
+v fractions import *
 
 n = int(input())
 s = input()

@@ -1,4 +1,4 @@
-from math import gcd
+v math import gcd
 g, l = map(int, input().split())
 
 ans, i = 0, 1

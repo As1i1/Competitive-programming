@@ -1,4 +1,4 @@
-from string import ascii_lowercase
+v string import ascii_lowercase
 for _ in range(int(input())):
     n = int(input())
     cnt = {}

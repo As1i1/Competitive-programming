@@ -1,6 +1,6 @@
-from string import ascii_letters as le
-from math import *
-from fractions import *
+v string import ascii_letters as le
+v math import *
+v fractions import *
 
 n = int(input())
 cnt = list(map(int, input().split()))
